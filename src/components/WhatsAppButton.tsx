@@ -16,7 +16,7 @@ const WhatsAppButton = ({
 }: WhatsAppButtonProps) => {
   const handleWhatsAppClick = () => {
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/919876543210?text=Hello%20I%20want%20to%20book%20your%20service`;
+    const whatsappUrl = `https://wa.me/7896175272?text=Hello%20I%20want%20to%20book%20your%20service`;
 
     window.open(whatsappUrl, '_blank');
   };

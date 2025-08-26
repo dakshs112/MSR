@@ -28,12 +28,12 @@ const Gallery = () => {
       title: 'Fabric Restoration'
     },
     {
-      src: 'https://www.homecaresolutions.in/assets/images/choose/sofa.jpgv',
+      src: 'https://5.imimg.com/data5/SELLER/Default/2024/10/459472969/ED/LR/JF/72666944/carpet-cleaning-service-250x250.jpg',
       alt: 'Office carpet cleaning with equipment',
       title: 'Office Deep Clean'
     },
     {
-      src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqldAHwV-BiQFJwbsdXKHrCWQClBT00YERTQ&s',
+      src: 'https://content.jdmagicbox.com/v2/comp/bangalore/z5/080pxx80.xx80.161026135925.p5z5/catalogue/zero-degree-facility-solutions-horamavu-bangalore-housekeeping-services-for-residential-g6ma4c8117.jpg',
       alt: 'Team cleaning gray sectional sofa',
       title: 'Team Professional Service'
     },

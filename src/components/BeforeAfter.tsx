@@ -101,10 +101,10 @@ const BeforeAfter = () => {
 
             {/* Labels */}
             <div className="absolute top-4 left-4 bg-background/80 backdrop-blur-sm px-3 py-2 rounded-lg">
-              <span className="text-sm font-medium text-foreground">BEFORE</span>
+              <span className="text-sm font-medium text-foreground">AFTER</span>
             </div>
             <div className="absolute top-4 right-4 bg-background/80 backdrop-blur-sm px-3 py-2 rounded-lg">
-              <span className="text-sm font-medium text-foreground">AFTER</span>
+              <span className="text-sm font-medium text-foreground"> BEFORE</span>
             </div>
           </div>
           

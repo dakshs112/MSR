@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import WhatsAppButton from '@/components/WhatsAppButton';
 import {
   Accordion,
   AccordionContent,
@@ -107,13 +108,16 @@ const FAQ = () => {
             <p className="text-muted-foreground mb-6">
               Don't hesitate to reach out. Our friendly team is here to help you with any questions about our cleaning services.
             </p>
+
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <div className="inline-flex items-center gap-2 bg-gradient-accent px-6 py-3 rounded-full shadow-glow hover:shadow-premium transition-all duration-300 cursor-pointer">
-                <span className="font-semibold text-accent-foreground">Contact Us Now</span>
-              </div>
+              <WhatsAppButton
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full shadow-glow hover:shadow-premium transition-all duration-300"
+                message="Hello MSR! I have some questions about your cleaning services. Could you please help me?"
+                label="Contact Us Now"
+              />
             </motion.div>
           </div>
         </motion.div>

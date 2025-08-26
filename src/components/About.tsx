@@ -42,6 +42,7 @@ const About = () => {
                 your living space feels fresh, clean, and healthy. With hundreds of satisfied customers across the region, 
                 we're committed to delivering exceptional results that exceed your expectations every single time.
               </span>
+              <img src ="https://harvinfurniture.com/wp-content/uploads/2024/04/img-3.png" alt="About MSR Service" className="mt-6 rounded-lg shadow-lg mx-auto" />
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/10 to-transparent skew-x-12 animate-shine-slow"></div>
             </p>
           </motion.div>

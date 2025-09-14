@@ -52,7 +52,7 @@ const Hero = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
           >
-            Deep Clean, Fresh Feel
+            Sofa and Carpet Deep Clean, Fresh Feel
           </motion.h1>
 
           <motion.p

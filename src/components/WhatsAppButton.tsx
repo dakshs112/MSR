@@ -8,7 +8,10 @@ interface WhatsAppButtonProps {
   variant?: 'floating' | 'inline';
   className?: string;
   label?: string;
+<<<<<<< HEAD
   showCall?: boolean;
+=======
+>>>>>>> 9ccc053a45bbf67ba2e213e824f9075c8baec7a6
 }
 
 const WhatsAppButton = ({ 
@@ -34,11 +37,15 @@ const WhatsAppButton = ({
     window.open(whatsappUrl, '_blank');
   };
 
+<<<<<<< HEAD
   const handleCallClick = () => {
     window.location.href = `tel:+91${phoneNumber}`;
   };
 
   // Floating variant: WhatsApp button at bottom right, Call button above it
+=======
+  // New floating variant uses the external image as the logo
+>>>>>>> 9ccc053a45bbf67ba2e213e824f9075c8baec7a6
   if (variant === 'floating') {
     return (
       <div className="fixed right-6 bottom-6 z-50 flex flex-col items-end gap-4">

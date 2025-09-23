@@ -1,4 +1,4 @@
-import { MessageCircle } from 'lucide-react';
+import { MessageCircle, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import React from 'react';
 
@@ -8,6 +8,7 @@ interface WhatsAppButtonProps {
   variant?: 'floating' | 'inline';
   className?: string;
   label?: string;
+  showCall?: boolean;
 }
 
 const WhatsAppButton = ({ 
@@ -16,6 +17,7 @@ const WhatsAppButton = ({
   variant = 'inline',
   className = '',
   label,
+  showCall = false,
 }: WhatsAppButtonProps) => {
   const handleWhatsAppClick = () => {
     // Normalize phone number to digits only
@@ -32,10 +34,25 @@ const WhatsAppButton = ({
     window.open(whatsappUrl, '_blank');
   };
 
-  // New floating variant uses the external image as the logo
+  const handleCallClick = () => {
+    window.location.href = `tel:+91${phoneNumber}`;
+  };
+
+  // Floating variant: WhatsApp button at bottom right, Call button above it
   if (variant === 'floating') {
     return (
-      <div className={`fixed bottom-6 right-6 z-50 ${className}`}>
+      <div className="fixed right-6 bottom-6 z-50 flex flex-col items-end gap-4">
+        {showCall && (
+          <Button
+            onClick={handleCallClick}
+            className="h-14 w-14 rounded-full bg-blue-500 hover:bg-blue-600 transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-xl"
+            size="icon"
+            aria-label="Call us"
+            style={{ marginBottom: '30px' }} // 56px above WhatsApp button
+          >
+            <Phone className="h-6 w-6 text-white" />
+          </Button>
+        )}
         <Button
           onClick={handleWhatsAppClick}
           className="h-14 w-14 rounded-full bg-green-500 hover:bg-green-600 transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-xl p-1"

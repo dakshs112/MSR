@@ -12,8 +12,8 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      {/* Floating WhatsApp Button */}
-      <WhatsAppButton variant="floating" />
+      {/* Floating WhatsApp + Call Button */}
+      <WhatsAppButton variant="floating" showCall phoneNumber="7896175272" />
       
       {/* Hero Section */}
       <Hero />

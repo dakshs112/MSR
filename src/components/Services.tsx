@@ -7,8 +7,8 @@ import WhatsAppButton from './WhatsAppButton';
 
 const services = [
   {
-    title: 'Sofa Cleaning',
-    description: 'Professional deep cleaning for all types of sofas and upholstery.',
+    title: 'Leather Sofa Cleaning & Polish',
+    description: 'Professional deep cleaning for all types of sofas and upholstery with Polishing service too.',
     image: sofaCleaning,
   },
   {
